@@ -11,18 +11,21 @@ Implementations of basic methods from the field of sequence and structural bioin
 _The tasks presume you have completed the required loading steps or used the Shortcut loading for testing purposes as described in its section, otherwise an error message is shown_
 
 * [Processing FASTA files](http://bioinformatika.mff.cuni.cz/repository/#/assignments/detail?id=tools_fasta_parsing)
-  * Example menu path for subtasks:
-    1. Read in a FASTA files with an arbitrary number of molecules
+  1. Read in a FASTA file with an arbitrary number of molecules
+    * Example menu path
       1. Select **Load FASTA sequence**
       1. Enter **TestingFiles/A9WZ33Double.fasta**
       1. Enter an integer specifying which sequence from the file you want
-    1. Obtain description/sequence of any of the molecules.
+  1. Obtain description/sequence of any of the molecules.
+    * Example menu path
       1. Select **Get the description of a loaded sequence** or **Get the sequence of a loaded sequence**
       1. Select the sequence you wish to display the data for
-    1. Return sequence length for given sequence.
+  1. Return sequence length for given sequence.
+    * Example menu path
       1. Select **Get the sequence length of a loaded sequence**
       1. Select the sequence you wish to display the data for
-    1. Return subsequence of given sequence.
+  1. Return subsequence of given sequence.
+    * Example menu path
       1. Select **Get a subsequence of a loaded sequence**
       1. Select the sequence you wish to display the data for
       1. Enter the beginning index integer
