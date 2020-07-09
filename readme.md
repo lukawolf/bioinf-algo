@@ -1,11 +1,15 @@
 # Bioinformatics toolbox
+
 A toolbox created for a MFF.CUNI.CZ course.
 
 ## Description
+
 Implementations of basic methods from the field of sequence and structural bioinformatics such as parsing files or assessing similarity of sequences and structures.
 
 ### Namely the tasks:
+
 _The tasks presume you have completed the required loading steps or used the Shortcut loading for testing purposes as described in its section, otherwise an error message is shown_
+
 * [Processing FASTA files](http://bioinformatika.mff.cuni.cz/repository/#/assignments/detail?id=tools_fasta_parsing)
   * Example menu path for subtasks:
     1. Read in a FASTA files with an arbitrary number of molecules
@@ -132,6 +136,7 @@ _The tasks presume you have completed the required loading steps or used the Sho
     * With the above point explained, the results were as expected - Active site was more conserved than the other parts of the protein
 
 ## Instalation
+
 * Python v 3.7.4
 * Pip packages (installed using pip install \<package name\>):
   * PyInquirer
@@ -144,6 +149,7 @@ _The tasks presume you have completed the required loading steps or used the Sho
     * Used for 3D convex hull computation
 
 ## Directory structure
+
 * docs
   * Contains pydoc documentation for the toolbox
 * Exceptions
@@ -156,13 +162,17 @@ _The tasks presume you have completed the required loading steps or used the Sho
   * The base menu used for running the package from command line
 
 ## Start
+
 Write the following into command line when you are in the directory containing this package
+
 ~~~
 python menu.py
 ~~~
 
 ## Stop
+
 Select **Exit** in menu
 
 ## Shortcut loading for testing purposes
+
 Choose the menu field: **Load testing files** then enter **1** or **2** to select sequence as one of the testing fasta files contains multiple sequences
