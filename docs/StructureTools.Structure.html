@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module StructureTools.Structure</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="StructureTools.html"><font color="#ffffff">StructureTools</font></a>.Structure</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href="menu.html">index</a><br></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="Bio.PDB.html">Bio.PDB</a><br>
+</td><td width="25%" valign=top><a href="math.html">math</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="StructureTools.Record.html#Record">StructureTools.Record.Record</a>(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="StructureTools.Structure.html#Structure">Structure</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Structure">class <strong>Structure</strong></a>(<a href="StructureTools.Record.html#Record">StructureTools.Record.Record</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Structure">Structure</a>(uri=None,&nbsp;id=None)<br>
+&nbsp;<br>
+A&nbsp;class&nbsp;representing&nbsp;a&nbsp;structure<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;record&nbsp;(Bio.PDB.<a href="#Structure">Structure</a>)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="StructureTools.Structure.html#Structure">Structure</a></dd>
+<dd><a href="StructureTools.Record.html#Record">StructureTools.Record.Record</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Structure-__init__"><strong>__init__</strong></a>(self, uri=None, id=None)</dt><dd><tt>Constructs&nbsp;the&nbsp;<a href="#Structure">Structure</a>&nbsp;object<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uri&nbsp;(str):&nbsp;The&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;path&nbsp;to&nbsp;structure<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id&nbsp;(str):&nbsp;An&nbsp;optional&nbsp;id&nbsp;to&nbsp;represent&nbsp;the&nbsp;structure,&nbsp;otherwise&nbsp;it&nbsp;is&nbsp;taken&nbsp;from&nbsp;the&nbsp;filename&nbsp;sans&nbsp;extension</tt></dd></dl>
+
+<dl><dt><a name="Structure-checkLoaded"><strong>checkLoaded</strong></a>(self, shouldBeLoaded=True)</dt><dd><tt>Checks&nbsp;whether&nbsp;the&nbsp;object&nbsp;is&nbsp;loaded&nbsp;and&nbsp;raises&nbsp;exception&nbsp;when&nbsp;it&nbsp;is&nbsp;in&nbsp;the&nbsp;wrong&nbsp;state</tt></dd></dl>
+
+<dl><dt><a name="Structure-fastAtomsNearby"><strong>fastAtomsNearby</strong></a>(self, atom, distance)</dt><dd><tt>Uses&nbsp;the&nbsp;quick&nbsp;library&nbsp;function&nbsp;to&nbsp;find&nbsp;nearby&nbsp;atoms<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;atom&nbsp;(Atom):&nbsp;The&nbsp;atom&nbsp;around&nbsp;which&nbsp;to&nbsp;search<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;distance&nbsp;(float):&nbsp;the&nbsp;distance&nbsp;in&nbsp;which&nbsp;to&nbsp;search<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;atoms&nbsp;(list)</tt></dd></dl>
+
+<dl><dt><a name="Structure-fastResiduesNearby"><strong>fastResiduesNearby</strong></a>(self, atom, distance)</dt><dd><tt>Uses&nbsp;the&nbsp;quick&nbsp;library&nbsp;function&nbsp;to&nbsp;find&nbsp;nearby&nbsp;residues<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;atom&nbsp;(Atom):&nbsp;The&nbsp;atom&nbsp;around&nbsp;which&nbsp;to&nbsp;search<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;distance&nbsp;(float):&nbsp;the&nbsp;distance&nbsp;in&nbsp;which&nbsp;to&nbsp;search<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;residues&nbsp;(list)</tt></dd></dl>
+
+<dl><dt><a name="Structure-fastWidth"><strong>fastWidth</strong></a>(self)</dt><dd><tt>Computes&nbsp;the&nbsp;width&nbsp;of&nbsp;the&nbsp;structure&nbsp;using&nbsp;scipy.&nbsp;First&nbsp;we&nbsp;get&nbsp;the&nbsp;convex&nbsp;hull&nbsp;of&nbsp;our&nbsp;atoms,&nbsp;upon&nbsp;which&nbsp;all&nbsp;our&nbsp;most&nbsp;distant&nbsp;candidates&nbsp;lie<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;fast&nbsp;proof&nbsp;is&nbsp;that&nbsp;if&nbsp;a&nbsp;candidate&nbsp;would&nbsp;be&nbsp;inside,&nbsp;there&nbsp;would&nbsp;be&nbsp;an&nbsp;even&nbsp;further&nbsp;one&nbsp;out&nbsp;on&nbsp;the&nbsp;hull<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width&nbsp;(float)</tt></dd></dl>
+
+<dl><dt><a name="Structure-getAllAtoms"><strong>getAllAtoms</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Structure-getChildren"><strong>getChildren</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Structure-getModel"><strong>getModel</strong></a>(self, modelId)</dt></dl>
+
+<dl><dt><a name="Structure-getModelIds"><strong>getModelIds</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Structure-getModels"><strong>getModels</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Structure-getNumberOfAtoms"><strong>getNumberOfAtoms</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Structure-getNumberOfChains"><strong>getNumberOfChains</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Structure-getNumberOfModels"><strong>getNumberOfModels</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Structure-getNumberOfResidues"><strong>getNumberOfResidues</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Structure-getStructure"><strong>getStructure</strong></a>(self)</dt><dd><tt>#Simple&nbsp;getters&nbsp;do&nbsp;not&nbsp;need&nbsp;comments</tt></dd></dl>
+
+<dl><dt><a name="Structure-getWidth"><strong>getWidth</strong></a>(self)</dt><dd><tt>Computes&nbsp;the&nbsp;width&nbsp;of&nbsp;the&nbsp;structure&nbsp;hungrily&nbsp;by&nbsp;comparing&nbsp;all&nbsp;the&nbsp;atom&nbsp;distances<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width&nbsp;(float)</tt></dd></dl>
+
+<dl><dt><a name="Structure-isLoaded"><strong>isLoaded</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Structure-loadPdb"><strong>loadPdb</strong></a>(self, uri, id=None)</dt><dd><tt>Constructs&nbsp;the&nbsp;<a href="#Structure">Structure</a>&nbsp;from&nbsp;a&nbsp;PDB&nbsp;file<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uri&nbsp;(str):&nbsp;The&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;path&nbsp;to&nbsp;structure<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id&nbsp;(str):&nbsp;An&nbsp;optional&nbsp;id&nbsp;to&nbsp;represent&nbsp;the&nbsp;structure,&nbsp;otherwise&nbsp;it&nbsp;is&nbsp;taken&nbsp;from&nbsp;the&nbsp;filename&nbsp;sans&nbsp;extension</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="StructureTools.Record.html#Record">StructureTools.Record.Record</a>:<br>
+<dl><dt><a name="Structure-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="Structure-getAtomsNearby"><strong>getAtomsNearby</strong></a>(self, atom, distance)</dt><dd><tt>Traverses&nbsp;all&nbsp;the&nbsp;recorded&nbsp;atoms&nbsp;to&nbsp;find&nbsp;nearby&nbsp;atoms<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;atom&nbsp;(Atom):&nbsp;The&nbsp;atom&nbsp;around&nbsp;which&nbsp;to&nbsp;search<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;distance&nbsp;(float):&nbsp;the&nbsp;distance&nbsp;in&nbsp;which&nbsp;to&nbsp;search<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;atoms&nbsp;(list)</tt></dd></dl>
+
+<dl><dt><a name="Structure-getFullId"><strong>getFullId</strong></a>(self)</dt><dd><tt>Returns&nbsp;path&nbsp;of&nbsp;selections&nbsp;to&nbsp;record</tt></dd></dl>
+
+<dl><dt><a name="Structure-getId"><strong>getId</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Structure-getParent"><strong>getParent</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Structure-getResiduesNearby"><strong>getResiduesNearby</strong></a>(self, atom, distance)</dt><dd><tt>Traverses&nbsp;all&nbsp;the&nbsp;recorded&nbsp;atoms&nbsp;to&nbsp;find&nbsp;nearby&nbsp;residues<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;atom&nbsp;(Atom):&nbsp;The&nbsp;atom&nbsp;around&nbsp;which&nbsp;to&nbsp;search<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;distance&nbsp;(float):&nbsp;the&nbsp;distance&nbsp;in&nbsp;which&nbsp;to&nbsp;search<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;residues&nbsp;(list)</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="StructureTools.Record.html#Record">StructureTools.Record.Record</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
