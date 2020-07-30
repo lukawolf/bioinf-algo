@@ -140,16 +140,33 @@ _The tasks presume you have completed the required loading steps or used the Sho
 
 ## Instalation
 
-* Python v 3.7.4
-* Pip packages (installed using pip install \<package name\>):
-  * PyInquirer
-    * Menu handling
-  * biopython
-    * Handling of bioinformatic files
-  * sortedcontainers
-    * Sorted container implementations
-  * scipy
-    * Used for 3D convex hull computation
+* Please install Python v 3.7.4 and pip package manager
+* In the directory containing this program create a python virtual environment
+  ~~~
+  python -m venv env
+  ~~~
+* Activate said virtual environment
+  * On windows:
+    ~~~
+    .\env\Scripts\activate
+    ~~~
+  * On unix:
+    ~~~
+    source env/bin/activate
+    ~~~
+* Install required packages using the command:
+  ~~~
+  pip install -r requirements.txt
+  ~~~
+  * Notable packages include:
+    * PyInquirer
+      * Menu handling
+    * biopython
+      * Handling of bioinformatic files
+    * sortedcontainers
+      * Sorted container implementations
+    * scipy
+      * Used for 3D convex hull computation
 
 ## Directory structure
 
@@ -166,7 +183,7 @@ _The tasks presume you have completed the required loading steps or used the Sho
 
 ## Start
 
-Write the following into command line when you are in the directory containing this package
+Write the following into command line when you are in the directory containing this package and have the installed environment active.
 
 ~~~
 python menu.py

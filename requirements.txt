@@ -1,0 +1,10 @@
+biopython==1.77
+numpy==1.19.1
+prompt-toolkit==1.0.14
+Pygments==2.6.1
+PyInquirer==1.0.3
+regex==2020.7.14
+scipy==1.5.1
+six==1.15.0
+sortedcontainers==2.2.2
+wcwidth==0.2.5
