@@ -1,7 +1,7 @@
 biopython==1.77
 numpy==1.19.1
 prompt-toolkit==1.0.14
-Pygments==2.6.1
+Pygments==2.7.4
 PyInquirer==1.0.3
 regex==2020.7.14
 scipy==1.5.1
